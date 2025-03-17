@@ -1,0 +1,38 @@
+.main-app{
+    display: flex;
+    .app-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: $main-gray-color;
+        height: 100%;
+
+        overflow-y: scroll;
+
+        .full-screen-content{
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            @include for-tablet{
+                min-height: 100vh;
+            }
+
+            @include for-desktop{
+                margin: unset;
+            }
+        }
+
+        @include for-desktop{
+            max-height: 100vh;
+        }
+    }
+    
+    @include for-desktop{
+        height: unset;
+        flex-direction: row;
+        justify-content: unset;
+    }
+}

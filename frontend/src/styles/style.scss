@@ -1,0 +1,24 @@
+// Setup
+@import "setup/variables";
+@import "setup/fonts";
+@import "setup/mixin";
+
+//Basics
+@import "basics/base";
+@import "basics/layout";
+
+//Pages
+@import "pages/main-app";
+@import "pages/home-page";
+
+
+//Components
+@import "components/main-app-menu";
+@import "components/mobile-menu";
+@import "components/scroll-bar";
+@import "components/header-block";
+@import "components/main-content-blocks";
+@import "components/action-preview";
+@import "components/modals";
+@import "components/loader";
+@import "components/pagination-dots";
